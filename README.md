@@ -40,4 +40,12 @@ Phone GETs XML from web server:
 	</Screen>
 </ppxml>
 ```
-That's it
+To use, just run python app.py and send POST to http://YourWebServer/MakeCallJSON/ with json
+```json
+{
+	"comment": "192.168.20.106",
+	"MakeCall": "989101234567"
+}
+```
+or simply browse to http://YourWebServer/MakeCall=<number> , it would initiate call to ip address hardcoded to script.
+Please be carefull, there is a security concern, because anyone could make call anywhere with access to server.
