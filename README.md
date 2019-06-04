@@ -2,7 +2,10 @@
 Simple Panasonic KX-HDV remote control server (uses XML)
 Web server that receives JSON data "comment" (phone ip address), "MakeCall" (Called number) and initiates call from IP Phone Panasonic KX-HDV100/130.
 XML Applications should be enabled on phone, no password set. In my case phones are in different non routed subnet, so i created new VM with access to both networks - LAN and phone subnet. 
-More info on http://na-pravo.com/2019/06/04/panasonickxhdvmanagexml/ and http://na-pravo.com/2019/06/04/kxdhvand1c/ 
+More info on 
+http://na-pravo.com/2019/06/04/panasonickxhdvmanagexml/ 
+http://na-pravo.com/2019/06/04/kxdhvand1c/ 
+
 Process:
 - Something sends POST request with json to our web server. It could be browser, REST Client, in my case - ERP system 1C.
 - Web server sends GET with XML to phone. XML contains URL with commands to phone. (So called PUSH system in Panasonic documentation)
