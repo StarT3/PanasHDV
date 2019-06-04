@@ -15,17 +15,18 @@ Process:
 
 Here is a sample XML wich web server sends to Phone
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ppxml xmlns="http://panasonic/sip_menu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://panasonic/sip_menu sip_menu.xsd">
 	<Trigger version="2.0">
 		<Source>http://192.168.20.111/989101234567.xml</Source> 
 	</Trigger> 
 </ppxml>
-
+```
 Where http://192.168.20.111/989101234567.xml is web server address and number to call.
 
 Phone GETs XML from web server:
-
+```xml
 <?xml version="1.0" encoding="utf-8"?> 
 <ppxml xmlns="http://panasonic/sip_screen" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://panasonic/sip_screen sip_screen.xsd"> 
 	<Screen version="2.0">
@@ -38,5 +39,5 @@ Phone GETs XML from web server:
 		</Timer>
 	</Screen>
 </ppxml>
-
+```
 That's it
