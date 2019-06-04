@@ -39,3 +39,4 @@ Phone GETs XML from web server:
 	</Screen>
 </ppxml>
 
+That's it
