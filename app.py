@@ -1,3 +1,5 @@
+# https://github.com/StarT3/PanasHDV
+# Simple python script (flask web server) to initiate calls from anywhere on Panasonic KX-HDV100/130
 from flask import Flask
 from flask import Response
 from flask import Request
